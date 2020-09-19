@@ -1,0 +1,73 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Contact Us
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js')
+
+    style
+        include ../static/style.css
+    style
+        include ../static/contact.css
+  body
+    // ----------------------------------Navigation bar-------------------------------------
+    section#nav-bar
+      nav.navbar.navbar-expand-lg.navbar-light
+        a.navbar-brand(href='/')
+          img(src='/static/crop.png', alt='')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/')
+                | HOME
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='/') ABOUT US
+            li.nav-item
+              a.nav-link(href='/') SERVICES
+            li.nav-item
+              a.nav-link(href='/') OUR TEAM
+            li.nav-item
+              a.nav-link(href='/price') PRICE PLANS
+            li.nav-item
+              a.nav-link(href='/') TESTIMONIALS
+            li.nav-item
+              a.nav-link(href='/contact') CONTACT US
+
+
+section#contact-section
+  .container
+    h2 Contact Us
+    p Email us and keep upto date with our latest news
+    .contact-form
+      // First grid
+      div
+        i.fa.fa-map-marker
+        span.form-info  123 New Delhi, haryana, USA
+        br
+        i.fa.fa-phone  
+        span.form-info  2340593
+        br
+        i.fa.fa-envelope
+        span.form-info  Amanyadav7861998@Gmail.com
+      div
+        form
+          input(type='text' placeholder='Your Name' required='')
+          input(type='text' placeholder='Last Name')
+          br
+          input(type='Email' placeholder='Email' required='')
+          br
+          input(type='text' placeholder='Subject of this message')
+          br
+          textarea(name='message' placeholder='Message' rows='5' required='')
+          br
+          button.submit Send Message
+
+    

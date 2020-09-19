@@ -1,0 +1,202 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Raotech limited
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js')
+
+    style
+        include ../static/style.css
+  body
+    // ----------------------------------Navigation bar-------------------------------------
+    section#nav-bar
+      nav.navbar.navbar-expand-lg.navbar-light
+        a.navbar-brand(href='/')
+          img(src='/static/crop.png', alt='')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/')
+                | HOME
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='/') ABOUT US
+            li.nav-item
+              a.nav-link(href='/') SERVICES
+            li.nav-item
+              a.nav-link(href='/') OUR TEAM
+            li.nav-item
+              a.nav-link(href='/price') PRICE PLANS
+            li.nav-item
+              a.nav-link(href='/') TESTIMONIALS
+            li.nav-item
+              a.nav-link(href='/contact') CONTACT US
+    // ----------------------------------slider------------------------------------
+    #slider
+      #headerSlider.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+          li.active(data-target='#headerSlider', data-slide-to='0')
+          li(data-target='#headerSlider', data-slide-to='1')
+          li(data-target='#headerSlider', data-slide-to='2')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.img-fluid(src='/static/image-3.jpg', alt='')
+            .carousel-caption
+              h5 New Website For Your Business
+          .carousel-item
+            img.d-block.img-fluid(src='/static/image-2.jpg', alt='')
+            .carousel-caption
+              h5 Any Software Solutions
+          .carousel-item
+            img.d-block.img-fluid(src='/static/image-1.jpg', alt='')
+            .carousel-caption
+              h5 24/7 Open Helpline
+        a.carousel-control-prev(href='#headerSlider', role='button', data-slide='prev')
+          span.carousel-control-prev-icon(aria-hidden='true')
+          span.sr-only Previous
+        a.carousel-control-next(href='#headerSlider', role='button', data-slide='next')
+          span.carousel-control-next-icon(aria-hidden='true')
+          span.sr-only Next
+    // -----------------------------------------About---------------------------------------------
+    section#about
+      .container
+        .row
+          .col-md-6
+            h2 About Us
+            .about-content
+              | My Name is Aman rao and this website is designed and developed by me I took help from the
+              | internet. This is a demo website for a Company which provides software solutions like developing
+              | your website making An android or ios apps for your small or large Business
+              | and other software problems.
+              | we provide 27/7 helpline and we never disappoint our clients.
+              | our Company have more than 5000 hard working members and developers we have 4 branches in Delhi,
+              | Mumbai,
+              | Chandighar and Pune.
+            button.btn.btn-primary(type='button')  Read more>> 
+          .col-md-6(skills-bar='')
+            p Android App Development
+            .progress
+              .progress-bar(style='width: 30%;') 30%
+            p Website Development
+            .progress
+              .progress-bar(style='width: 40%;') 40%
+            p IOS App Development
+            .progress
+              .progress-bar(style='width: 10%;') 10%
+            p Other Software Issues 
+            .progress
+              .progress-bar(style='width: 20%;') 20%
+    // ----------------our-services-------------------------------
+    section#services
+      .container
+        h1 Our Services
+        .row.services
+          .col-md-3.text-center
+            .icon
+              i.fa.fa-desktop
+            h3 Web Development
+            p
+              | We make responsive and attractive websites with best user experience for your Business.
+          .col-md-3.text-center
+            .icon
+              i.fa.fa-window-restore
+            h3 Software problems
+            p  Our experienced team can resolve any kind of software Issues you are facing
+          .col-md-3.text-center
+            .icon
+              i.fa.fa-android
+            h3 App Development
+            p
+              | We make responsive and attractive Apps with best user experience for your Business.
+          .col-md-3.text-center
+            .icon
+              i.fa.fa-apple
+            h3 IOS App
+            p
+              | We make responsive and attractive IOS Apps with best user experience for your Business.
+    // ----------team member---------------
+    section#team
+      .container
+        h1 Our Team
+        .row
+          .col-md-3.profile-pic.text-center
+            .img-box
+              img.img-responsive(src='/static/person-1.jpg')
+              ul
+                a(href='facebook.com')
+                  li
+                    i.fa.fa-facebook
+                a(href='twitter.com')
+                  li
+                    i.fa.fa-twitter
+                a(href='linkedin.com')
+                  li
+                    i.fa.fa-linkedin
+            .per-info
+              h2 Aman Rao
+              h3 Founder / CEO
+              p I'am the founder and CEO of raotech industries
+          .col-md-3.profile-pic.text-center
+            .img-box
+              img.img-responsive(src='/static/person-3.jpg')
+              ul
+                a(href='facebook.com')
+                  li
+                    i.fa.fa-facebook
+                a(href='twitter.com')
+                  li
+                    i.fa.fa-twitter
+                a(href='linkedin.com')
+                  li
+                    i.fa.fa-linkedin
+            .per-info
+              h2 Rahul
+              h3 Co-Founder / SEO
+              p I'am the co-founder and CEO of raotech industries
+          .col-md-3.profile-pic.text-center
+            .img-box
+              img.img-responsive(src='/static/person-2.jpg')
+              ul
+                a(href='facebook.com')
+                  li
+                    i.fa.fa-facebook
+                a(href='twitter.com')
+                  li
+                    i.fa.fa-twitter
+                a(href='linkedin.com')
+                  li
+                    i.fa.fa-linkedin
+            .per-info
+              h2 Mohit Rao
+              h3 HR Head
+              p I'am the founder and CEO of raotech industries
+          .col-md-3.profile-pic.text-center
+            .img-box
+              img.img-responsive(src='/static/person-1.jpg')
+              ul
+                a(href='facebook.com')
+                  li
+                    i.fa.fa-facebook
+                a(href='twitter.com')
+                  li
+                    i.fa.fa-twitter
+                a(href='linkedin.com')
+                  li
+                    i.fa.fa-linkedin
+            .per-info
+              h2 david
+              h3 HR Head
+              p I'am the founder and CEO of raotech industries
+    // ---------------------------promo-------------------------------
+    section#promo
+      .container
+        p Get Free Domain Name and Web Hosting
+        a.btn.btn-primary(href='/contact') Contact Us
+    

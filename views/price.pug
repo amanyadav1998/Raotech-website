@@ -1,0 +1,152 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Price Plans
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js')
+
+    style
+        include ../static/style.css
+    style
+        include ../static/price.css
+  body
+    // ----------------------------------Navigation bar-------------------------------------
+    section#nav-bar
+      nav.navbar.navbar-expand-lg.navbar-light
+        a.navbar-brand(href='/')
+          img(src='/static/crop.png', alt='')
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/')
+                | HOME
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='/') ABOUT US
+            li.nav-item
+              a.nav-link(href='/') SERVICES
+            li.nav-item
+              a.nav-link(href='/') OUR TEAM
+            li.nav-item
+              a.nav-link(href='/price') PRICE PLANS
+            li.nav-item
+              a.nav-link(href='/') TESTIMONIALS
+            li.nav-item
+              a.nav-link(href='/contact') CONTACT US
+   
+    section#price
+  .container
+    h1 Price Plan
+    .row
+      .col-md-3
+        .single-price
+          .price-head
+            h2 Free
+            p
+              | $0
+              span /month
+          .price-content
+            ul
+              li
+                i.fa.fa-check-circle
+                | 5GB Space
+              li
+                i.fa.fa-check-circle
+                | 10GB Bandwidth
+              li
+                i.fa.fa-times-circle
+                | 15 Email Account
+              li
+                i.fa.fa-times-circle
+                | Unlimited Domain
+              li
+                i.fa.fa-times-circle
+                | Unlimited Support
+          .price-button
+            a.buy-btn(href='/contact') Join Free
+      .col-md-3
+        .single-price
+          .price-head
+            h2 Start up
+            p
+              | $10
+              span /month
+          .price-content
+            ul
+              li
+                i.fa.fa-check-circle
+                | 10GB Space
+              li
+                i.fa.fa-check-circle
+                | 100GB Bandwidth
+              li
+                i.fa.fa-check-circle
+                | 15 Email Account
+              li
+                i.fa.fa-times-circle
+                | Unlimited Domain
+              li
+                i.fa.fa-times-circle
+                | Unlimited Support
+          .price-button
+            a.buy-btn(href='/contact') Join Free
+      .col-md-3
+        .single-price
+          .price-head
+            h2 Busniess
+            p
+              | $0
+              span /month
+          .price-content
+            ul
+              li
+                i.fa.fa-check-circle
+                | 50GB Space
+              li
+                i.fa.fa-check-circle
+                | 200GB Bandwidth
+              li
+                i.fa.fa-check-circle
+                | 50 Email Account
+              li
+                i.fa.fa-check-circle
+                | Unlimited Domain
+              li
+                i.fa.fa-times-circle
+                | Unlimited Support
+          .price-button
+            a.buy-btn(href='/contact') Join Free
+      .col-md-3
+        .single-price
+          .price-head
+            h2 Premium
+            p
+              | $250
+              span /month
+          .price-content
+            ul
+              li
+                i.fa.fa-check-circle
+                | 100GB Space
+              li
+                i.fa.fa-check-circle
+                | 250GB Bandwidth
+              li
+                i.fa.fa-check-circle
+                | 50 Email Account
+              li
+                i.fa.fa-check-circle
+                | Unlimited Domain
+              li
+                i.fa.fa-check-circle
+                | Unlimited Support
+          .price-button
+            a.buy-btn(href='/contact') Join Free
+
